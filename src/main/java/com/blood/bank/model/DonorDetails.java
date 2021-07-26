@@ -1,17 +1,25 @@
-package com.blood.model;
+package com.blood.bank.model;
 
-import org.bson.types.ObjectId;
+
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Document(collection="Details")
+@Document(collection="Donor")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class DonorDetails {
 
     @Id
-    private ObjectId id;
+    //@ApiModelProperty(hidden = true)
+    private String id;
 
     private String name;
 
