@@ -1,4 +1,4 @@
-package com.blood.requests;
+package com.blood.bank.requests;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
