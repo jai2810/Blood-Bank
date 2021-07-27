@@ -37,6 +37,7 @@ public class BankController {
         Query query = new Query();
         query.addCriteria(Criteria.where("id").is(id));
         BankDetails bankDetails = mongoOperations.findOne(query,BankDetails.class);
+        if(bankDetails==null)return "Bank not found";
         mongoOperations.remove(bankDetails);
         return "Bank deleted successfully";
     }
