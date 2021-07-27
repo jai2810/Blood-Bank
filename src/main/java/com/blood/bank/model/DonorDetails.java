@@ -18,7 +18,7 @@ import java.util.List;
 public class DonorDetails {
 
     @Id
-    //@ApiModelProperty(hidden = true)
+    @ApiModelProperty(hidden = true)
     private String id;
 
     private String name;
@@ -26,6 +26,8 @@ public class DonorDetails {
     private Integer age;
 
     private String state;
+
+    private String donorBank;
 
     private String city;
 
