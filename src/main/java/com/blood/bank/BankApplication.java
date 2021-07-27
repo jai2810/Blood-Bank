@@ -32,10 +32,10 @@ public class BankApplication {
 	private ApiInfo apiDetails(){
 		return new ApiInfo(
 				"Blood Bank Database APIs",
-				"Sample api for project",
+				"Api's for project",
 				"1.0",
 				"Free to use",
-				new springfox.documentation.service.Contact("Jai Prakash Sharma", "abc.com","jaiprakashsharma@gmail.com"),
+				new springfox.documentation.service.Contact("Jai Prakash Sharma", "abc.com","jaiprakashsharma1028@gmail.com"),
 				"API license",
 				"abc.com",
 				Collections.emptyList());
