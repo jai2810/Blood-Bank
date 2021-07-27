@@ -1,9 +1,9 @@
 package com.blood.bank.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,7 +16,8 @@ import java.util.HashMap;
 public class BankDetails {
 
     @Id
-    ObjectId id;
+    @ApiModelProperty(hidden = true)
+    private String id;
 
     private String name;
 

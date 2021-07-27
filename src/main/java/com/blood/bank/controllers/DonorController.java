@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/donor")
+@RequestMapping("/api/v1/donor")
 public class DonorController {
 
     @Autowired
@@ -22,7 +22,7 @@ public class DonorController {
     DonorSearchRepository searchRepository;
 
 
-    @GetMapping(value = "/all")
+    @GetMapping("/all")
     public List<DonorDetails> getAllDonors(){
         return searchRepository.findAll();
     }
@@ -40,5 +40,11 @@ public class DonorController {
         DonorDetails donor = mongoOperations.findOne(query,DonorDetails.class);
         mongoOperations.remove(donor);
         return "Donor deleted successfully!";
+    }
+
+    @GetMapping("/{id}")
+    public Optional<DonorDetails> getDonor (@PathVariable String id){
+        Optional<DonorDetails> donorDetails = searchRepository.findById(id);
+        return donorDetails;
     }
 }
