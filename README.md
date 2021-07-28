@@ -2,6 +2,7 @@
 Blood bank is a web application that emulates the working of a blood bank.
 
 This is a complete backend part of the application that deals with real time data that is inserted and deleted directly into the database.
+
 Note : Since this is locally hosted you have to add data to it via apis. And the database will be created automatically into your local machine.
 Use Robo 3T to check more on database.
 
