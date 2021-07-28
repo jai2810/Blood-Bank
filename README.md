@@ -19,4 +19,6 @@ Programming languages : JAVA
 
 Frameworks used : Spring, SpringBoot
 
+API Type : RESTFUL
+
 Feel free to use/contribute to it, and create a PR :)
