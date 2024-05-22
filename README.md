@@ -13,7 +13,7 @@ This can also be used to connect with frontend, via calling the apis that the co
 
 To run this application, just run BankApplication.java, then goto http://localhost:8080/swagger-ui.html and test the apis with real time data.
 
-Database used : NOSQL(MongoDB)
+Database used : MongoDB
 
 Programming languages : JAVA
 
